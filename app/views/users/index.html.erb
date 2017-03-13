@@ -4,3 +4,9 @@
 <div>
   There are <%= @users.length %> currently in the library system!
 </div>
+
+<div>
+  <% @users.each do |user| %>
+    <%= link_to "#{user.first_name}  #{user.last_name}", controller: "users", action: "show", id: user %><br>
+    <% end %>
+</div>
