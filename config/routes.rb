@@ -12,4 +12,7 @@ Rails.application.routes.draw do
   get "/logout", to: "sessions#destroy"
   post "/sessions", to: "sessions#create"
 
+#libraries stuff
+  get "/libraries", to: "libraries#index"
+
 end
