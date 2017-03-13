@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 #users stuff
   get "/users/new", to: "users#new", as: "new_user"
   post "/users", to: "users#create"
-  get "users/:id", to: "users#show", as: "user"
+  get "/users/:id", to: "users#show", as: "user"
 
 #sessions stuff
   get "/login", to: "sessions#new"
@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   get "/libraries", to: "libraries#index"
   get "/libraries/new", to: "libraries#new", as: "new_library"
   post "/libraries", to: "libraries#create"
+  get "/libraries/:id", to: "libraries#show", as: "library"
 
 end
