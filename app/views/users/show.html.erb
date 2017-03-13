@@ -1,6 +1,6 @@
 <div>
   <% if current_user == @user %>
-    <p>Feliz Navidad <%= @user.first_name %> </p>
+    <p>Welcome to your profile <%= @user.first_name %> </p>
   <% else %>
     <p>Welcome to <%= @user.first_name %>'s profile <%= current_user.first_name %></p>
   <% end %>
