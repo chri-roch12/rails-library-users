@@ -5,6 +5,9 @@
     <h3><%= library.name %></h3>
     <p><%= library.floor_count %></p>
     <p><%= library.floor_area %></p>
+    <% if current_user %>
+      <%= button_to "Join", library_users_path(library) %>
+    <% end %>
   </div>
   <br>
 <% end %>
